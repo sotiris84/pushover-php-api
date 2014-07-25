@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Sent push notifications from your website</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- It works on both buttons and links -->
+<button type="button" id="okButton" onclick="myfunction()" value="okButton">Sent notification</button>
+<br><br>
+<a href="#" onclick="myfunction();return false;">Sent notification</a>
+<!-- A div to show the output of the php file -->
+<div id="message"></div>
+<!-- The javascript to make it happen -->
+<script>
+function myfunction(){
+  $('#message').load('sent_notification.php');
+}
+</script>
+</body>
+</html>
